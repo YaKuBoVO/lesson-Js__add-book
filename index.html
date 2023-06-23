@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   <link rel="stylesheet" href="style/style.css">
+   <title>Js Adding-book</title>
+</head>
+
+<body>
+   <div class="container mt-4">
+      <div class="row">
+         <h1 class="display-4 text-center">Add Book</h1>
+      </div>
+      <form id="book-form">
+         <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" required />
+         </div>
+
+         <div class="mb-3">
+            <label class="form-label">Type</label>
+            <input type="text" class="form-control" id="type" list="date" required />
+            <datalist id="date">
+               <option>Badiiy</option>
+               <option>Biznes</option>
+               <option>Diniy</option>
+               <option>Ilmiy</option>
+            </datalist>
+         </div>
+         <button type="submit" class="btn btn-danger">Submit</button>
+      </form>
+
+      <div class="btn-group mt-5" role="group" aria-label="Basic example">
+         <button type="button" class="btn btn-warning">All</button>
+         <button type="button" class="btn btn-warning">Badiiy</button>
+         <button type="button" class="btn btn-warning">Biznes</button>
+         <button type="button" class="btn btn-warning">Diniy</button>
+         <button type="button" class="btn btn-warning">Ilmiy</button>
+      </div>
+      <div class="block w-50 mt-3">
+         <ul class="list-group">
+         </ul>
+      </div>
+   </div>
+
+   <script src="script.js">
+   </script>
+</body>
+</html>
